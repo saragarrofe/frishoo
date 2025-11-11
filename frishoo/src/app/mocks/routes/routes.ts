@@ -1,13 +1,6 @@
-export type Route = {
-  id: number;
-  title: string;
-  location: string;
-  duration: string;
-  difficulty: "Easy" | "Medium" | "Hard";
-  imageUrl: string;
-};
+import { Trip } from "@/app/Types/Trip";
 
-export const routes: Route[] = [
+export const routes: Trip[] = [
   {
     id: 1,
     title: "El camino de Santiago",
