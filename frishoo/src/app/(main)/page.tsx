@@ -1,6 +1,6 @@
-import { routes } from "./mocks/routes/routes";
-import { Trip } from "./Types/Trip";
-import TripCard from "./components/TripCard";
+import { routes } from "../mocks/routes/routes";
+import { Trip } from "../Types/Trip";
+import TripCard from "../components/TripCard";
 
 export default function Home() {
   return (
