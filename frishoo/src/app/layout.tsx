@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Navbar from "@/components/ui/Navbar/Navbar";
 
 export const metadata: Metadata = {
   title: "Frishoo Trips",
@@ -13,13 +14,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased bg-gray-50">
-        <header className="bg-white shadow-sm border-b">
-          <div className="max-w-7xl mx-auto px-4 py-4">
-            <h1 className="text-2xl font-bold text-blue-600">Frishoo Trips</h1>
+      <body className="">
+        {/* Navbar fijo arriba */}
+        <Navbar />
+
+        {/* Contenido principal */}
+        <main className="min-h-screen">{children}</main>
+
+        {/* Footer */}
+        <footer className="border-t border-gray-800 bg-[#111827] py-6">
+          <div className="container mx-auto px-6 text-center text-sm text-gray-400">
+            © {new Date().getFullYear()} Frishoo Trips
           </div>
-        </header>
-        <main className="max-w-7xl mx-auto px-4 py-8">{children}</main>
+        </footer>
       </body>
     </html>
   );
