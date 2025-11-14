@@ -1,4 +1,4 @@
-# 🌍 Frishoo Trips
+# 🌍 Frishoo
 
 A travel itinerary planner with user-generated content, built to learn Next.js 15.
 
